@@ -1,0 +1,10 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+}
+
+.appMain {
+  flex: 1;
+  min-width: 0;
+  display: block;
+}

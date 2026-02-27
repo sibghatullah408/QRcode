@@ -1,0 +1,126 @@
+.roomPage {
+  padding: 22px 22px;
+  width: 100%;
+  max-width: none;
+}
+
+.roomCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08), 0 8px 22px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.roomCardHeader {
+  height: 46px;
+  background: linear-gradient(180deg, #0a345c 0%, #082f55 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.roomCardHeaderTitle {
+  color: #e6d59d;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.primaryButton {
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #1b3855 0%, #102a44 100%);
+  color: #e8ddc3;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  filter: brightness(1.05);
+}
+
+.roomTableWrap {
+  padding: 12px;
+}
+
+.roomLoading {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.roomTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.roomTable thead th {
+  text-align: left;
+  padding: 9px 12px;
+  background: linear-gradient(180deg, #d1bb8f 0%, #c8b083 100%);
+  color: #3a2e17;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.roomTableActionHeader {
+  text-align: center;
+}
+
+.roomTable tbody td {
+  padding: 9px 12px;
+  font-size: 13px;
+  color: #2a2a2a;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.roomTable tbody tr:nth-child(odd) td {
+  background: #f2ead6;
+}
+
+.roomTable tbody tr:nth-child(even) td {
+  background: #ffffff;
+}
+
+.roomTableActionCell {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.editButton {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, #b7974c 0%, #8f7337 100%);
+  color: #f0e6cf;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  filter: brightness(1.05);
+}
+
+.deleteButton {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  background: linear-gradient(180deg, #c97878 0%, #a45656 100%);
+  color: #f0e6cf;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  filter: brightness(1.05);
+}

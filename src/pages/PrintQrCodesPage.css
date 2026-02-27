@@ -1,0 +1,121 @@
+.printQrPage {
+  padding: 22px 22px;
+  width: 100%;
+}
+
+.printQrCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08), 0 8px 22px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.printQrHeader {
+  height: 46px;
+  background: linear-gradient(180deg, #0a345c 0%, #082f55 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.printQrTitle {
+  color: #e6d59d;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.printButton {
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #1b3855 0%, #102a44 100%);
+  color: #e8ddc3;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.printButton:hover {
+  filter: brightness(1.05);
+}
+
+.printQrBody {
+  padding: 12px;
+}
+
+.printQrEmpty {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.qrGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.qrCard {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f8f3e6;
+}
+
+.qrCardHeader {
+  background: linear-gradient(180deg, #d1bb8f 0%, #c8b083 100%);
+  color: #3a2e17;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 12px;
+}
+
+.qrCardBody {
+  padding: 12px;
+}
+
+.qrImageWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0 10px;
+}
+
+.qrImage {
+  width: 220px;
+  height: 220px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.qrPlaceholder {
+  width: 220px;
+  height: 220px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.qrUrl {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  word-break: break-all;
+}
+
+@media print {
+  .sidebar {
+    display: none;
+  }
+
+  .appMain {
+    padding: 0;
+  }
+
+  .printButton {
+    display: none;
+  }
+}

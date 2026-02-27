@@ -1,0 +1,105 @@
+.roomDetailPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 18px 14px 26px;
+  background: radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.02) 55%),
+    linear-gradient(180deg, rgba(220, 208, 176, 0.5) 0%, rgba(222, 212, 188, 0.72) 55%, rgba(205, 193, 165, 0.85) 100%);
+}
+
+.roomDetailHeader {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 34px;
+  color: #d6c995;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+  padding: 10px 8px;
+  background: linear-gradient(180deg, #0a345c 0%, #082f55 100%);
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  margin: 0 auto 14px;
+  max-width: 420px;
+}
+
+.roomDetailList {
+  display: grid;
+  gap: 18px;
+  max-width: 420px;
+  margin: 0 auto 18px;
+}
+
+.personCard {
+  background: linear-gradient(180deg, rgba(247, 241, 221, 0.96) 0%, rgba(238, 231, 204, 0.95) 100%);
+  border: 2px solid rgba(120, 97, 55, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+  padding: 18px 18px 16px;
+}
+
+.personTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.personName {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 34px;
+  color: #241a0a;
+}
+
+.personIcon {
+  width: 28px;
+  height: 28px;
+  background: radial-gradient(circle at 40% 40%, #d6c995 0%, #b89d5c 65%, #8f7337 100%);
+  border-radius: 50%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+}
+
+.personMeta {
+  display: grid;
+  gap: 8px;
+  color: #4b3a1d;
+}
+
+.metaRow {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.metaLabel {
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.metaValue {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 30px;
+  color: #241a0a;
+}
+
+.roomDetailBack {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  background: linear-gradient(180deg, #b7974c 0%, #8f7337 100%);
+  color: #241a0a;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.roomDetailBack:hover {
+  filter: brightness(1.05);
+}
+
+.roomDetailLoading,
+.roomDetailError {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 14px 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
